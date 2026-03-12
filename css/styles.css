@@ -78,6 +78,12 @@ p a:hover{ color:#868e36; text-decoration:none;}
 .clear#end{height:20px}
 
 /* footer */
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
 
 #footer{height:49px; clear:both; width:775px; background:#e8f09c; margin: 0 auto}
 #footer p{padding: 10px 0 0 0; font:10px/16px Tahoma, sans-serif; font-weight:normal; text-align:center; color:#000;}
