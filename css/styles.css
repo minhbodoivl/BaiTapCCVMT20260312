@@ -89,3 +89,55 @@ footer{
 #footer p{padding: 10px 0 0 0; font:10px/16px Tahoma, sans-serif; font-weight:normal; text-align:center; color:#000;}
 #footer p a{font:10px/16px Tahoma, sans-serif; font-weight:normal; color:#000; text-decoration:none; padding: 0 3px }
 #footer p a:hover{text-decoration:underline; color:#000}
+
+
+/* Product */
+.products {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fdf8f8; /* Màu nền hồng nhạt nhẹ nhàng */
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.products h2 {
+    color: #d44179; /* Màu hồng đậm cho tiêu đề */
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    border-bottom: 2px solid #d44179;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Container bọc các item sản phẩm */
+.products .product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Định dạng từng box sản phẩm (Rose, Tulip, Sunflower) */
+.products div:not(h2) {
+    background: #fff;
+    padding: 15px 25px;
+    border: 1px solid #ffc0cb;
+    border-radius: 5px;
+    color: #555;
+    font-weight: bold;
+    text-align: center;
+    min-width: 120px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Hiệu ứng khi di chuột qua sản phẩm */
+.products div:not(h2):hover {
+    background-color: #d44179;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(212, 65, 121, 0.3);
+}
